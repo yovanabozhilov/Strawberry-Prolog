@@ -24,6 +24,7 @@ change_amplitude(init) :-
 	menu(normal, action(amplitude2), text("100 px")),
 	menu(normal, action(amplitude3), text("150 px")),
 	menu(normal, action(amplitude4), text("200 px")).
+ 
 amplitude1(press):- G_AMPLITUDE := 50.
 amplitude2(press):- G_AMPLITUDE := 100.
 amplitude3(press):- G_AMPLITUDE := 150.
@@ -34,6 +35,7 @@ change_mode(init) :-
 	menu(normal, action(mode2), text("Second Harmonic")),
 	menu(normal, action(mode3), text("Third Harmonic")),
 	menu(normal, action(mode4), text("Fourth Harmonic")).
+ 
 mode1(press):- G_MODE := 1.
 mode2(press):- G_MODE := 2.
 mode3(press):- G_MODE := 3.
@@ -44,6 +46,7 @@ change_frequency(init) :-
 	menu(normal, action(frequency2), text("2 rad/s")),
 	menu(normal, action(frequency3), text("3 rad/s")),
 	menu(normal, action(frequency4), text("4 rad/s")).
+ 
 frequency1(press):- G_OMEGA := 1.
 frequency2(press):- G_OMEGA := 2.
 frequency3(press):- G_OMEGA := 3.
